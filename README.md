@@ -9,7 +9,7 @@ In this repository, I've reported two methods for calculating the free energy su
 
 ## 2. Results of free energy calculations
 - As a reference, the benchmark of the free energy difference was obtained from a 5 ns expanded ensemble simulation, which was about -3.137 +/- 0.135 kT.  
-- As a result of the assessment of the influence of the block size on the uncertainty, 20 ps might be a reasonable block size, as can be seen from the jupyte notebook.
+- As a result of the assessment of the influence of the block size on the uncertainty, 20 ps might be a reasonable block size, as can be seen from the jupyter notebook.
 - Using 20 ps as the block size, the free energy difference estimated by Method 1 was -3.20068 +/- 0.05761 kT.
 - Using 20 ps as the block size, the free energy difference estimated by Method 2 was -3.20068 +/- 0.06523 kT.
 

@@ -3,7 +3,6 @@ import time
 import glob
 import copy
 import yaml
-import natsort 
 import argparse 
 import numpy as np 
 import matplotlib.pyplot as plt 
@@ -438,7 +437,7 @@ if __name__ == '__main__':
         os.system(f'plumed driver --plumed {args.input_re} --noatoms')
         
         # Step 4: Free energy calculations 
-        
+        """
         files = []
         for f in os.listdir('histograms'):
             if f.endswith('hist.dat'):
@@ -446,7 +445,11 @@ if __name__ == '__main__':
         files = natsort.natsorted(files, reverse=False)
         N_b = len(files)    # the number of blocks
         fes = calculate_free_energy('histograms', files)
-        
+        """
+
+        files = glob.glob('histograms/*hist.dat')
+        N_b = len(files)    # the number of blocks
+        fes = calculate_free_energy('.', files)
 
         CV_points = []
         
