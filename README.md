@@ -8,7 +8,7 @@ In this repository, I've reported two methods for calculating the free energy su
 - In the folder `input_files`, I stored the simulation outputs (including `COLVAR` and `HILLS_LAMBDA`) from a 5ns 1D alchemical metadynamics, which are the inputs for our data analysis in `Method_1` and `Method_2`.
 
 ## 2. Results of free energy calculations
-- As a reference, the benchmark of the free energy difference was obtained from a 5 ns expanded ensemble simulation, which was about -3.137 +/- 0.135 kT.  
+- As a reference, the benchmark of the free energy difference was obtained from a 5 ns expanded ensemble simulation, which was about -3.137 +/- 0.135 kT.  Note that this was performed after the weights were frozen after a short initial simualtion, but that initial simulation was only 0.7 ns.
 - As a result of the assessment of the influence of the block size on the uncertainty, 20 ps might be a reasonable block size, as can be seen from the jupyter notebook.
 - Using 20 ps as the block size, the free energy difference estimated by Method 1 was -3.20068 +/- 0.05761 kT.
 - Using 20 ps as the block size, the free energy difference estimated by Method 2 was -3.20068 +/- 0.06523 kT.
@@ -19,5 +19,5 @@ In this repository, I've reported two methods for calculating the free energy su
 - we expect that 1D alchemical metadynamics should have roughly the same performance as expanded ensemble simulations of the same length, which led to a much smaller uncertainty (-3.137 +/- 0.135 kT). We wonder if our way to calculate the free energy difference is correct or if our implementation of alchemical metadynamics is problematic. 
 
 ### Method 2
-- We wonder if our way of implementing Equation 10 in the paper is correct. If so, could you help us identify the reason that it underestimated the true uncertainty? The implementation is in `calculate_free_energy.py` in case that you are interested in taking a look at it. 
+- We wonder if our way of implementing Equation 10 in the paper is correct. If so, might you have any guesses for the the reason that it underestimated the true uncertainty, similarly to Method 1? The implementation is in `calculate_free_energy.py` in case that you are interested for reference.
 - As mentioned `Method_2.ipynb`, our implementation of Method 2 was extremely computationally expensive compared to Method 1. We wonder if there is a way to accelerate the calculation of the cumulative bias B(s, t_fill + i * L_b), which was the bottleneck of the method. 
