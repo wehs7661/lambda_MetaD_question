@@ -1,0 +1,26 @@
+
+Data analysis of the file: state_A/configuration.dat
+====================================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/configuration.dat state_B/configuration.dat -x Angle (deg) -cc radian to degree -t Angle 2-3-4 -n angle_234_hist -l State A State B -c 5 -r 80 160 -k
+Assessment of the hsitogram flatness: N_ratio = inf
+The maximum of angle is 147.337759 deg.
+The minimum of angle is 87.233512 deg.
+The total number of counts is 50001.
+Angle between 120.800000 and 121.200000 deg has the highest probability density.
+
+Data analysis of the file: state_B/configuration.dat
+====================================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/configuration.dat state_B/configuration.dat -x Angle (deg) -cc radian to degree -t Angle 2-3-4 -n angle_234_hist -l State A State B -c 5 -r 80 160 -k
+Assessment of the hsitogram flatness: N_ratio = inf
+The maximum of angle is 159.136335 deg.
+The minimum of angle is 87.755362 deg.
+The total number of counts is 50001.
+Angle between 120.400000 and 120.800000 deg has the highest probability density.
+
+=== Kolmogorov-Smirnov test ===
+- Files of interest: state_A/configuration.dat, state_B/configuration.dat
+- Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- p-value: 0.5892408050198172
+- Interpretation: The two distributions are consistent with each other.

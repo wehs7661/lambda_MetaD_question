@@ -1,0 +1,160 @@
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -Nb 8 -k
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k
+Assessment of the hsitogram flatness: N_ratio = 1.157
+The maximum of $ \lambda $ is 3.141592.
+The minimum of $ \lambda $ is -3.141592.
+The total number of counts is 5000001.
+$ \lambda $ between -3.141592 and -2.356194 has the highest probability density.
+
+Data analysis of the file: state_B/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k -c 2
+Assessment of the hsitogram flatness: N_ratio = 1.081
+The maximum of $ \lambda $ is 7.000000.
+The minimum of $ \lambda $ is 0.000000.
+The total number of counts is 5000001.
+$ \lambda $ between 6.125000 and 7.000000 has the highest probability density.
+
+Data analysis of the file: state_B/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k -c 2
+Assessment of the hsitogram flatness: N_ratio = 1.132
+The maximum of $ \lambda $ is 7.000000.
+The minimum of $ \lambda $ is 0.000000.
+The total number of counts is 5000001.
+$ \lambda $ between 6.125000 and 7.000000 has the highest probability density.
+
+=== Kolmogorov-Smirnov test ===
+- Files of interest: state_A/COLVAR, state_B/COLVAR
+- Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- p-value: 6.558617143845537e-140
+- Interpretation: The two distributions are not consistent with each other.
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 9 -k
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 9 -k
+Assessment of the hsitogram flatness: N_ratio = 1.187
+The maximum of $ \lambda $ is 3.141592.
+The minimum of $ \lambda $ is -3.141592.
+The total number of counts is 5000001.
+$ \lambda $ between -3.141592 and -2.443460 has the highest probability density.
+
+Data analysis of the file: state_B/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 9 -k
+Assessment of the hsitogram flatness: N_ratio = 1.180
+The maximum of $ \lambda $ is 3.141592.
+The minimum of $ \lambda $ is -3.141588.
+The total number of counts is 5000001.
+$ \lambda $ between -3.141588 and -2.443457 has the highest probability density.
+
+=== Kolmogorov-Smirnov test ===
+- Files of interest: state_A/COLVAR, state_B/COLVAR
+- Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- p-value: 4.18789264521787e-14
+- Interpretation: The two distributions are not consistent with each other.
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k -ol
+Assessment of the hsitogram flatness: N_ratio = 1.157
+The maximum of $ \lambda $ is 3.141592.
+The minimum of $ \lambda $ is -3.141592.
+The total number of counts is 5000001.
+$ \lambda $ between -3.141592 and -2.356194 has the highest probability density.
+
+Data analysis of the file: state_B/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k -ol
+Assessment of the hsitogram flatness: N_ratio = 1.154
+The maximum of $ \lambda $ is 3.141592.
+The minimum of $ \lambda $ is -3.141588.
+The total number of counts is 5000001.
+$ \lambda $ between -3.141588 and -2.356191 has the highest probability density.
+
+=== Kolmogorov-Smirnov test ===
+- Files of interest: state_A/COLVAR, state_B/COLVAR
+- Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- p-value: 4.18789264521787e-14
+- Interpretation: The two distributions are not consistent with each other.
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k -ol -c 2
+Assessment of the hsitogram flatness: N_ratio = 1.081
+The maximum of $ \lambda $ is 7.000000.
+The minimum of $ \lambda $ is 0.000000.
+The total number of counts is 5000001.
+$ \lambda $ between 6.125000 and 7.000000 has the highest probability density.
+
+Data analysis of the file: state_B/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k -ol -c 2
+Assessment of the hsitogram flatness: N_ratio = 1.132
+The maximum of $ \lambda $ is 7.000000.
+The minimum of $ \lambda $ is 0.000000.
+The total number of counts is 5000001.
+$ \lambda $ between 6.125000 and 7.000000 has the highest probability density.
+
+=== Kolmogorov-Smirnov test ===
+- Files of interest: state_A/COLVAR, state_B/COLVAR
+- Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- p-value: 6.558617143845537e-140
+- Interpretation: The two distributions are not consistent with each other.
+
+Data analysis of the file: state_A/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k -ol -c 2 -lc 2
+Assessment of the hsitogram flatness: N_ratio = 1.081
+The maximum of $ \lambda $ is 7.000000.
+The minimum of $ \lambda $ is 0.000000.
+The total number of counts is 5000001.
+$ \lambda $ between 6.125000 and 7.000000 has the highest probability density.
+
+Data analysis of the file: state_B/COLVAR
+=========================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x $ \lambda $ -t Alchemical variable -n lambda_hist -l State A State B -nb 8 -k -ol -c 2 -lc 2
+Assessment of the hsitogram flatness: N_ratio = 1.132
+The maximum of $ \lambda $ is 7.000000.
+The minimum of $ \lambda $ is 0.000000.
+The total number of counts is 5000001.
+$ \lambda $ between 6.125000 and 7.000000 has the highest probability density.
+
+=== Kolmogorov-Smirnov test ===
+- Files of interest: state_A/COLVAR, state_B/COLVAR
+- Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- p-value: 6.558617143845537e-140
+- Interpretation: The two distributions are not consistent with each other.
