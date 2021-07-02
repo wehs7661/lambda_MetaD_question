@@ -1,0 +1,26 @@
+
+Data analysis of the file: state_A/configuration.dat
+====================================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/configuration.dat state_B/configuration.dat -x Bond length (nm) -t Bond length 2-3 -n BL_23_hist -l State A State B -c 2 -r 0.12 0.19 -k
+Assessment of the hsitogram flatness: N_ratio = inf
+The maximum of bond length is 0.173425 nm.
+The minimum of bond length is 0.129514 nm.
+The total number of counts is 50001.
+Bond length between 0.150100 and 0.150450 nm has the highest probability density.
+
+Data analysis of the file: state_B/configuration.dat
+====================================================
+- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/configuration.dat state_B/configuration.dat -x Bond length (nm) -t Bond length 2-3 -n BL_23_hist -l State A State B -c 2 -r 0.12 0.19 -k
+Assessment of the hsitogram flatness: N_ratio = inf
+The maximum of bond length is 0.183319 nm.
+The minimum of bond length is 0.125260 nm.
+The total number of counts is 50001.
+Bond length between 0.149750 and 0.150100 nm has the highest probability density.
+
+=== Kolmogorov-Smirnov test ===
+- Files of interest: state_A/configuration.dat, state_B/configuration.dat
+- Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- p-value: 0.17410539780442502
+- Interpretation: The two distributions are consistent with each other.
