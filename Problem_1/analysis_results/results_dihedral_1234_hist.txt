@@ -1,46 +1,27 @@
 
-Data analysis of the file: state_A/configuration.dat
-====================================================
-- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
-- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/configuration.dat state_B/COLVAR -x Dihedral (deg) -cc radian to degree -t Dihedral 1-2-3-4 -n dihedral_1234_hist -l State A State B -c 4 -r -180 180 -k
-Assessment of the hsitogram flatness: N_ratio = inf
-The maximum of dihedral is 152.724822 deg.
-The minimum of dihedral is 89.637471 deg.
-The total number of counts is 50001.
-Dihedral between 120.600000 and 122.400000 deg has the highest probability density.
-
-Data analysis of the file: state_B/COLVAR
-=========================================
-- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
-- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/configuration.dat state_B/COLVAR -x Dihedral (deg) -cc radian to degree -t Dihedral 1-2-3-4 -n dihedral_1234_hist -l State A State B -c 4 -r -180 180 -k
-
 Data analysis of the file: state_A/COLVAR
 =========================================
 - Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
-- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x Dihedral (deg) -cc radian to degree -t Dihedral 1-2-3-4 -n dihedral_1234_hist -l State A State B -c 4 -r -180 180 -k
-
-Data analysis of the file: state_A/COLVAR
-=========================================
-- Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
-- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x Dihedral (deg) -cc radian to degree -t Dihedral 1-2-3-4 -n dihedral_1234_hist -l State A State B -r -180 180 -k
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x Dihedral 1-2-3-4 (deg) -cc radian to degree -l State A state B -n dihedral_1234_hist -c 1 -k
 Assessment of the hsitogram flatness: N_ratio = 1.251
-The maximum of dihedral is 179.999963 deg.
-The minimum of dihedral is -179.999963 deg.
+The maximum of dihedral 1-2-3-4 is 179.999963 deg.
+The minimum of dihedral 1-2-3-4 is -179.999963 deg.
 The total number of counts is 5000001.
-Dihedral between -174.600000 and -172.800000 deg has the highest probability density.
+Dihedral 1-2-3-4 between -174.599964 and -172.799964 deg has the highest probability density.
 
 Data analysis of the file: state_B/COLVAR
 =========================================
 - Working directory: /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1
-- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x Dihedral (deg) -cc radian to degree -t Dihedral 1-2-3-4 -n dihedral_1234_hist -l State A State B -r -180 180 -k
+- Command line: /home/wei-tse/.local/bin/plot_hist -i state_A/COLVAR state_B/COLVAR -x Dihedral 1-2-3-4 (deg) -cc radian to degree -l State A state B -n dihedral_1234_hist -c 1 -k
 Assessment of the hsitogram flatness: N_ratio = 1.246
-The maximum of dihedral is 179.999963 deg.
-The minimum of dihedral is -179.999733 deg.
+The maximum of dihedral 1-2-3-4 is 179.999963 deg.
+The minimum of dihedral 1-2-3-4 is -179.999733 deg.
 The total number of counts is 5000001.
-Dihedral between -180.000000 and -178.200000 deg has the highest probability density.
+Dihedral 1-2-3-4 between -179.999733 and -178.199735 deg has the highest probability density.
 
 === Kolmogorov-Smirnov test ===
 - Files of interest: state_A/COLVAR, state_B/COLVAR
 - Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- D-statistics 0.0025097994980400884
 - p-value: 4.18789264521787e-14
 - Interpretation: The two distributions are not consistent with each other.
