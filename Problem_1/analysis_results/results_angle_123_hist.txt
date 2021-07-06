@@ -22,5 +22,6 @@ Angle between 120.800000 and 121.200000 deg has the highest probability density.
 === Kolmogorov-Smirnov test ===
 - Files of interest: state_A/configuration.dat, state_B/configuration.dat
 - Null hypothesis: The distributions obtained from the two files are consistent with each other.
+- D-statistics 0.007139857202855926
 - p-value: 0.15552203222868843
 - Interpretation: The two distributions are consistent with each other.

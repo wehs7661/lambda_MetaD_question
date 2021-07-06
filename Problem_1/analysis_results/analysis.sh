@@ -6,4 +6,6 @@ plot_hist -i state_A/configuration.dat state_B/configuration.dat -x "Angle (deg)
 combine_plots -f angle_* -b -n angle_hist
 combine_plots -f BL_* -b -n bond_length_hist -d 3 1
 
-
+plot_hist -i state_A/COLVAR state_B/COLVAR -x "Dihedral 1-2-3-4 (deg)" -cc "radian to degree" -l "State A" "state B" -n "dihedral_1234_hist" -c 1 -k
+plot_hist -i state_A/COLVAR state_B/COLVAR -x "$ \lambda $ state" -l "State A" "state B" -n "lambda_hist" -c 2 -nb 8 -k -ol
+combine_plots -f dihedral_1234_hist.png lambda_hist.png -b -n CV_hist
