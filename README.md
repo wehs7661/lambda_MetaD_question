@@ -1,23 +1,38 @@
 # Questions about alchemical metadynamics
+In this repostiroy, I've described two problems we encountered before wrapping up the paper. Below is a summary for the questions.
 
-In this repository, I've reported two methods for calculating the free energy surface and the corresponding uncertainty from alchemical metadynamics for a simple problem of argon being alchemically removed from water in GROMACS, with 6 alchemical states. For each method, I have one or two questions about the uncertainty assessment, as elaborated in the Jupyter notebooks (`Method_1.ipynb` and `Method_2.ipynb`) in folders `Method_1` and `Method_2`.
+## Problem 1
+### System of interest
+A molecule (solvated in water) composed of 4 vdW sites with 0 net charges. In this simple system (solvated in water), the slowest degree of freedom is the dihedral 1-2-3-4. The force constant of the dihedral was greatly increased such that sampling only in the alchemical space (e.g. expanded ensemble or 1D alchemical metadynamics) can not estimate the free energy difference between the coupled and uncoupled states accurately. (This is shown by the difference in the estimated free energy differences obtained from expanded ensemble simulations starting from different torsional state of the molecule.)
+### Description of the problems
+Our hypothesis is that in a 2D alchemical metadynamics simulation where the dihedral is also biased, the free energy difference can be recovered correctly due to sufficient sampling in the configurational space. Therefore, we performed a 2D alchemical metadynamics starting from each of the torsional states of the molecule. However, it was shown that the two estimated values were inconsistent to each other, as shown below:
+- 2D alchemical metadynamics starting from state A (dihedral around 180 degrees): -2.518 +/- 0.043 kT
+- 2D alchemical metadynamics starting from state B (dihedral around 0 degrees): -4.994 +/- 0.032 kT
 
-## 1. Directory structure
-- In the folder `Method_1`, I've implemented the approach one taught in [PLUMED masterclass 21-2]((https://www.plumed.org/doc-v2.7/user-doc/html/masterclass-21-2.html)) (Exercise 9). 
-- In the folder `Method_2`, I used a second method to calculate the uncertainty of the free energy surface, from Equation 10 in the paper [Using metadynamics to explore complex free-energy landscapes](https://www.nature.com/articles/s42254-020-0153-0).
-- In the folder `input_files`, I stored the simulation outputs (including `COLVAR` and `HILLS_LAMBDA`) from a 5ns 1D alchemical metadynamics, which are the inputs for our data analysis in `Method_1` and `Method_2`.
+### Relevant folder
+Note that some large simulation outputs can be downloaded from [this link](https://drive.google.com/drive/folders/19mCLDtWa1L9jtyh13_DHYnLnhJqpXaN8?usp=sharing).
+```
+Problem_1
+├── analysis_results
+├── Problem_1.ipynb
+├── state_A
+└── state_B
+```
 
-## 2. Results of free energy calculations
-- As a reference, the benchmark of the free energy difference was obtained from a 5 ns expanded ensemble simulation, which was about -3.137 +/- 0.135 kT.  Note that this was performed after the weights were frozen after a short initial simualtion, but that initial simulation was only 0.7 ns.
-- As a result of the assessment of the influence of the block size on the uncertainty, 20 ps might be a reasonable block size, as can be seen from the jupyter notebook.
-- Using 20 ps as the block size, the free energy difference estimated by Method 1 was -3.20068 +/- 0.05761 kT.
-- Using 20 ps as the block size, the free energy difference estimated by Method 2 was -3.20068 +/- 0.06523 kT.
+## Problem 2
+### System of interest
+CB8-G3 host-guest binding complex (solvated in water) from SAMPL6 SAMPLing challenge. The slowest degree of freedom of this binding complex is assumed to be the water molecules entering and exiting the binding cavity. The corresponding CV is the number is therefore the number of water molecules in the binding cavity. 
 
-## 3. My questions in summary
-### Method 1
-- As demonstrated in `Method_1.ipynb`, Method 1 underestimated the uncertainty by a substantial amount compated to running 20 replicates of the simulation. As mentioned in the notebook, the average free energy difference calculated from 20 repetitions of alchemical metadynamics was -3.120 +/- 0.415 kT.
-- we expect that 1D alchemical metadynamics should have roughly the same performance as expanded ensemble simulations of the same length, which led to a much smaller uncertainty (-3.137 +/- 0.135 kT). We wonder if our way to calculate the free energy difference is correct or if our implementation of alchemical metadynamics is problematic. 
+### Description of the problems
+- The problems have been summarized in the notebook `Problem_2.ipynb`
 
-### Method 2
-- We wonder if our way of implementing Equation 10 in the paper is correct. If so, might you have any guesses for the the reason that it underestimated the true uncertainty, similarly to Method 1? The implementation is in `calculate_free_energy.py` in case that you are interested for reference.
-- As mentioned `Method_2.ipynb`, our implementation of Method 2 was extremely computationally expensive compared to Method 1. We wonder if there is a way to accelerate the calculation of the cumulative bias B(s, t_fill + i * L_b), which was the bottleneck of the method. 
+
+### Relevant folder
+Note that some large simulation outputs can be downloaded from [this link](https://drive.google.com/drive/folders/19mCLDtWa1L9jtyh13_DHYnLnhJqpXaN8?usp=sharing).
+```
+Problem_2
+├── CV_hist.png
+├── plumed.dat
+├── Problem_2.ipynb
+└── time_series.png
+```
