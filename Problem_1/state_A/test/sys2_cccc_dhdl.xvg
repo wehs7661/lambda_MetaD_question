@@ -1,0 +1,37 @@
+# This file was created Thu Jul  8 21:29:24 2021
+# Created by:
+#                  :-) GROMACS - gmx mdrun, 2020.4-MODIFIED (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1/state_A/test_1
+# Command line:
+#   gmx mdrun -s sys2_cccc.tpr -x sys2_cccc.xtc -c sys2_cccc_output.gro -e sys2_cccc.edr -dhdl sys2_cccc_dhdl.xvg -g sys2_cccc.log -plumed -cpi state.cpt
+# gmx mdrun is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 298 (K) "
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Thermodynamic state"
+@ s1 legend "Total Energy (kJ/mol)"
+@ s2 legend "dH/d\xl\f{} vdw-lambda = 0.0000"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.0000"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.2000"
+@ s5 legend "\xD\f{}H \xl\f{} to 0.4000"
+@ s6 legend "\xD\f{}H \xl\f{} to 0.5000"
+@ s7 legend "\xD\f{}H \xl\f{} to 0.6000"
+@ s8 legend "\xD\f{}H \xl\f{} to 0.7000"
+@ s9 legend "\xD\f{}H \xl\f{} to 0.8000"
+@ s10 legend "\xD\f{}H \xl\f{} to 1.0000"
+0.0000    0 -9242.2676 21.216114 -1.9073486e-06 4.7487104 10.167621 13.019323 15.929094 18.877657 21.850299 27.825091
+2.0000    1 -9185.8086 26.304131 -5.1221579 0.0000000 5.3423746 8.0526912 10.774319 13.499476 16.222226 21.643321
