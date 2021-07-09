@@ -1,0 +1,7 @@
+#! FIELDS time theta lambda sigma_theta sigma_lambda height biasf
+#! SET multivariate false
+#! SET kerneltype gaussian
+#! SET min_theta -pi
+#! SET max_theta pi
+      1.000000047497451      -2.99132599519719                      0                    0.5                 0.0001      2.520972415856761                     60
+      2.000000094994903     -2.870622082726527                      1                    0.5                 0.0001      2.520972415856761                     60
