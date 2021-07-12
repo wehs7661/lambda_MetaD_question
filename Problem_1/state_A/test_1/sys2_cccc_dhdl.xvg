@@ -1,15 +1,15 @@
-# This file was created Thu Jul  8 21:29:24 2021
+# This file was created Thu Jul  8 22:42:02 2021
 # Created by:
 #                  :-) GROMACS - gmx mdrun, 2020.4-MODIFIED (-:
 # 
 # Executable:   /usr/local/gromacs/bin/gmx
 # Data prefix:  /usr/local/gromacs
-# Working dir:  /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1/state_A/test_1
+# Working dir:  /home/wei-tse/Documents/lambda_MetaD_questions/Problem_1/state_A/test
 # Command line:
 #   gmx mdrun -s sys2_cccc.tpr -x sys2_cccc.xtc -c sys2_cccc_output.gro -e sys2_cccc.edr -dhdl sys2_cccc_dhdl.xvg -g sys2_cccc.log -plumed -cpi state.cpt
 # gmx mdrun is part of G R O M A C S:
 #
-# Getting the Right Output Means no Artefacts in Calculating Stuff
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
 #
 @    title "dH/d\xl\f{} and \xD\f{}H"
 @    xaxis  label "Time (ps)"
@@ -33,5 +33,5 @@
 @ s8 legend "\xD\f{}H \xl\f{} to 0.7000"
 @ s9 legend "\xD\f{}H \xl\f{} to 0.8000"
 @ s10 legend "\xD\f{}H \xl\f{} to 1.0000"
-0.0000    0 -9242.2676 21.216114 -1.9073486e-06 4.7487104 10.167621 13.019323 15.929094 18.877657 21.850299 27.825091
-2.0000    1 -9185.8086 26.304131 -5.1221579 0.0000000 5.3423746 8.0526912 10.774319 13.499476 16.222226 21.643321
+0.0000    0 -9242.2676 21.216118 0.0000000 4.7487124 10.167619 13.019322 15.929093 18.877657 21.850296 27.825089
+2.0000    4 -9266.9883 -15.587977 286.82807 50.993835 9.5416693 2.8654868 4.7683716e-07 -0.62162131 0.14716317 4.0580166
